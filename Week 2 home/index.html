@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <h3>Task #1</h3>
+    <ol>
+        <li>დავწეროთ ფუნქცია, რომელიც პარამეტრად გადაცემულ რიცხვს დაამრგვალებს მეტობით.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც პარამეტრად გადაცემულ რიცხვს დაამრგვალებს ნაკლებობით.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც პარამეტრად გადაცემულ რიცხვს დაამრგვალებს.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც პარამეტრად გადაცემულ რიცხვს დაამრგვალებს, დაამრგვალებს მეტობით ან ნაკლებობით, მეორე გადაცემული პა-რამეტრის მიხედვით(მეორე პარამეტრი უნდა იყოს ლოგიკური ტიპის).</li>
+    </ol>
+    <div id="area"></div>
+    <label>Input float:</label>
+    <input id="prompt" type="number" placeholder="n" step="0.1" required>
+    <br>
+    <label for="functions">Choose a function:</label>
+    <select name="functions" id="fnnames" required>
+      <option value="ceil">Ceil()</option>
+      <option value="floor">Floor()</option>
+      <option value="round">Round()</option>
+    </select>
+    <button id="action">Action</button>
+</div>
+<div>
+    <h3>Task #2</h3>
+    <ol>
+        <li>დავწეროთ ფუნქცია, რომელიც დაბეჭდავს შემთხვევით რიცხვს [0, 1] შუალედიდან.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც დაბეჭდავს შემთხვევით რიცხვს [5, 50] შუალედიდან.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც დაბეჭდავს შემთხვევით რიცხვს პარამეტრებად გადაცემული [a, b] შუალედიდან.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც დაბეჭდავს შემთხვევით მთელ რიცხვს პარამეტრებად გადაცემული [a, b] მთელი შუალედიდან.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც დაბეჭდავს 10 შემთხვევით მთელ რიცხვს პარამეტრებად გადაცემულ [a, b] მთელი შუალედიდან.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც დაბეჭდავს პარამეტრად გადაცემულ n შემთხვევით მთელ რიცხვს ასევე პარამეტრებად გადაცემული [a, b] მთელი შუალედიდან.</li>
+    </ol>
+    <div id="area1"></div>
+    <input id="prompt1" type="number" min="0" placeholder="a min (default is 0)" step="1">
+    <input id="prompt2" type="number" min="0" placeholder="b max (any)" step="1">
+    <input id="prompt3" type="number" mun="0" placeholder="n count of output" step="1">
+    <button id="action1">Action</button>
+</div>
+<div>
+    <h3>Task #3</h3>
+    <ol>
+        <li>დავწეროთ ფუნქცია, რომელიც გამოიტანს კვირის რომელიმე შემთხვევით დღეს.</li>
+    </ol>
+    <div id="area3"></div>
+    <button id="action2" >Action</button>
+</div>
+<div>
+    <h3>Task #4</h3>
+    <ol>
+        <li>დავწეროთ ფუნქცია, რომელიც გამოიტანს ათი ფოტოდან შემთხვევით რომელიმე ფოტოს.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც გამოიტანს 20 ფოტოდან შემთვევით რომელიმე 4 ფოტოს.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც გამოიტანს კვირის რომელიმე შემთხვევით დღეს რაიმე ფოტოსთან ერთად.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც გამოიტანს კვირის რომელიმე შემთხვევით დღეს ხუთი ფოტოდან რაიმე შემთხვევითად აღებულ ფოტოსთან ერთად.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც გამოიტანს თვის რომელიმე შემთხვევით რიცხვს.</li>
+        <li>დავწეროთ ფუნქცია, რომელიც გამოიტანს თვის რომელიმე შემთხვევით რიცხვს ათი ფოტოდან რაიმე შემთხვევითად აღებულ ფოტოსთან ერთად.</li>
+    </ol>
+    <label>Random 1 image</label>
+    <button id="action3">Action</button>
+    <br>
+    <label>Random 4 image</label>
+    <button id="action4">Action</button>
+    <div id="area4"></div>
+</div>
+<div>
+    <h3>Task #5</h3>
+    <ol>
+        <li>დავწეროთ ფუნქცია, რომელიც გამოიტანს 3x4 ცხრილს, რომლის თითოეულ უჯრაში ჩასმული იქნება შემთხვევითად აღებული ფოტო 20 ფოტოდან.</li>
+        <li>
+            შექმენით ფორმა, რომელიც საშუალებას მოგვცემს ავირჩიოთ
+            ცხრილისთვის სასურველი რაოდენობის სვეტები და სტრიქონები, 
+            ასევე ავირჩიოთ სასურველი რაოდენობის ფოტოები, ღილაკზე დაკლიკებისას
+            გამოვიტანოთ არჩეული რაოდენობის სვეტებისა და სტრიქონების
+            ცხრილი, რომელშიდაც იქნება ჩასმული არჩეული რაოდენობის
+            ფოტოები.
+        </li>
+        <label>Dimension of table</label>
+        <input id="prompt4" type="number" min="0" step="1" placeholder="row">
+        <span>X</span>
+        <input id="prompt5" type="number" min="0" step="1" placeholder="column">
+        <br>
+        <label>How much image?</label>
+        <input id="prompt6" type="number" min="0" step="1" placeholder="n">
+        <button id="action5">Action</button>
+        <div id="area5"></div>
+    </ol>
+</div>
+<script src="./script.js" defer></script>
+</body>
+</html>
