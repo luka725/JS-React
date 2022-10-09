@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one">
+        <h3>Task #1</h3>
+        <ol>
+            <li>დაწერეთ ფუნქცია, რომელიც გამოიტანს სტრიქონის სიგრძეს.</li>
+            <li>დწერეთ ფუნქცია, რომელიც დაითვლის სტრიქონში სიმბოლო a-ის რაოდენობას.</li>
+            <li>დაწერეთ ფუნქცია, რომელიც სტრიქონში იპოვის ქვესტრიქონის რაოდენობას.</li>
+            <li>დაწერეთ ფუნქცია, რომელიც გამოიტანს სტრიქონის შიდა კოდებს.</li>
+        </ol>
+        <div id="area"></div>
+        <label>შეიყვანეთ ტექსტი:</label>
+        <input id="prompt" type="text" placeholder="text">
+        <select id="selection" name="actions">
+            <option value="Length">Length</option>
+            <option value="Count Character">Count Character</option>
+            <option value="Substrings">Substrings</option>
+            <option value="Inner codes">Inner codes</option>
+        </select>
+        <button id="action">Action</button>
+    </div>
+    <div id="two">
+        <h3>Task #2</h3>
+        <ol>
+            <li>დაწერეთ ფუნქცია, რომელიც დააგენერირებს 40 შემთხვევითი სიმბოლოსაგან  შემდგარ სიტყვას.</li>
+            <li>დაწერეთ ფუნქცია, რომელიც დააგენერირებს n შემთხევითი სიმბოლოსგან შემდგარ სიტყვას.</li>
+            <li>დაწერეთ ფუნქცია, რომელიც დააგენერირებს n შემთხევითი სიმბოლოსგან შემდგარი სიტყვებით შედგენილ 20 სიტყვიან სტრიქონს გამოტოვებებით.</li>
+            <li>დაწერეთ ფუნქცია, რომელიც დააგენერირებს მინიმალური m და მაქსიმალური n  შემთხვევითი სიმბოლოსგან შემდგარი სიტყვების k რაოდენობისაგან შემდგარ სტრიქონს.</li>
+        </ol>
+        <div id="area1"></div>
+        <input type="number" id="prompt1" placeholder="n max" maxlength="5">
+        <select id="selection1" name="action">
+            <option value="random-text">Random text by character number</option>
+            <option value="min-max">Random text by min and max with k</option>
+        </select>
+        <button id="action1">Action</button>
+    </div>
+    <div id="three">
+        <h3>Task #3</h3>
+        <ol>
+            <li>დაწერეთ ფუნქცია, რომელიც დაადგენს სტრიქონში მოიძებნება თუ არა სტრიქონების მასივში ჩაწერილი სიტყვები.</li>
+            <li>დაწერეთ ფუნქცია, რომელიც სტრიქონში მოძებნის სტრიქონების მასივში ჩაწერილ სიტყვებს და თუ მოიძებნა რომელიმე სიტყვა, სტრიქონში ამ სიტყვის შემადგენელ სიმბოლოებს შეცვლის შესაბამისი რაოდენობის „ * “ სიმბოლოთი, ე.წ. ტექსტების ფილტრაცია, უცენზურო სიტყვების დაფარვა.</li>
+            <li>დაწერეთ ფუნქცია, რომელიც სტრიქონში დატოვებს მხოლოდ განსხვავებულ სიმბოლოებს, ხოლო დანარჩენებს წაშლის, დაადგენს თითოეული სიმბოლო რა სიხშირით შეგხვდა სტრიქონში. </li>
+            <li>დაწერეთ ფუნქცია, რომელიც განსაზღვრავს სიტყვებში სიმბოლოების მინუმალური და მაქსიმალური სიმბოლოების რაოდენობას და ასევე ამოიღებს ყველაზე ხშირად განმეორებად სიმბოლოებს.</li>
+        </ol>
+        <div id="area2"></div>
+        <textarea name="user-input" id="text"></textarea>
+        <select id="selection2" name="act">
+            <option value="search">Search string</option>
+            <option value="filter">Filter string</option>
+            <option value="simbol">Remove character</option>
+            <option value="simbols-min-max">Count min and max</option>
+        </select>
+        <input type="text" id="keywords" placeholder="separate multiple words by space" size="25">
+        <button id="action2">Action</button>
+    </div>
+<script src="./script.js" defer></script>
+</body>
+</html>

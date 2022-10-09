@@ -44,7 +44,7 @@ const randomGenerator = () =>{
     let area = document.getElementById('area1');
     let n;
     area.innerHTML = '';
-    min = parseInt(min)
+    min = parseInt(min);
     max = parseInt(max);
 
     if(!min && !max){
