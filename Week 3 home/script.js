@@ -1,30 +1,37 @@
 // Task #3 starting from here
 
-// initializing needed nodes and elements of document
+// initializing needed nodes and elements from document
+
+// button element from front storing in btn variable
 const btn = document.getElementById('action');
+// select element from front storing in selection variable
 const selection = document.getElementById('selection');
+// div element from front storing in area because I will use this div next to write html inside by Javascript
 const area = document.getElementById('area');
 
 // adding event listener on action button which will expire on click event
-// adding event listener on option where user can select different functions to expire on change event
 selection.addEventListener('change', () => {
+    // start watching at select from front
     selectChangeHandler();
 });
 
+// adding event listener on option where user can select different functions to expire on change event
 btn.addEventListener('click', () => {
+    //when click action in front do something
     one(selection, area);
 });
 
 // Main function of task which defines to which function should start deppending on the selected values
 const one = (select, area) =>{
+
     let val = document.getElementById('prompt').value;
     let selection = select.value;
     let node = document.createElement('p');
 
-    // this will clear target element all time when function reexpired
+    // this will clear div element all time when function expire
     area.innerHTML = '';
 
-    // main switch which expiring functions
+    // main switch which starting function deppending on what option user will chose from front
     switch (selection) {
         case 'Length':
             lengthString(val, area, node);
@@ -45,7 +52,7 @@ const one = (select, area) =>{
 
 const lengthString = (text, area, node) => {
     let len = text.length;
-    node.innerHTML = `სტრიქონის სიგრძე: ${len} ელემენტი;`;
+    node.innerHTML = `სტრიქონის სიგრძეა: ${len} ელემენტი;`;
     area.appendChild(node);
     return;
 };
@@ -88,7 +95,7 @@ const countSubstring = (text, area, node) =>{
 };
 
 const innerCodes = () =>{
-    alert('what? => დაწერეთ ფუნქცია, რომელიც გამოიტანს სტრიქონის შიდა კოდებს.')
+    alert('wt? => დაწერეთ ფუნქცია, რომელიც გამოიტანს სტრიქონის შიდა კოდებს.');
 }
 
 // Task #2 starting from here
@@ -291,13 +298,12 @@ const three = (selected, area) =>{
 const search = (area) => {
     let text = document.getElementById('text').value;
     let keywords = document.getElementById('keywords').value;
-    let parsedtext = text.replace(/_.,*^%@!#$/g, ' ');
-    let textarr = parsedtext.split(' ');
+    let textarr = text.split(/[., ]+/);
     let wordsarr = keywords.split(' ');
-    
+    console.log(textarr);
     let result = {};
     wordsarr.forEach(element => {
-        result[element] = textarr.filter(e => e == element).length;
+        result[element] = textarr.filter(e => e === element).length;
     });
     
     for(let prop in result){
