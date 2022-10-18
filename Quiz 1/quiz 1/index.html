@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1</title>
+</head>
+<style>
+    body{
+        padding: 50px;
+    }
+    .bord{
+        border: solid 1px black; height: 30px; width: 50px; display: flex; justify-content: center; align-items: center;
+    }
+    th, td {
+        border:1px solid black;
+    }
+</style>
+<body>
+    <div id="one">
+        <h3>Task #1</h3>
+        <div id="area" class="bord">0</div>
+        <button id="minus">-</button>
+        <button id="plus">+</button>
+        <br>
+        <button id="reset">reset</button>
+    </div>
+    <div id="two">
+        <h3>Task #2</h3>
+        <div id="area2"></div>
+        <div id="area3"></div>
+        <button id="action">Action</button>
+    </div>
+    <div id="three">
+        <h3>Task #3</h3>
+        <div id="area4">
+            <table id="table" style="width:40%; height: 300px;"></table>
+        </div>
+        <button id="action2">Action</button>
+    </div>
+    <div id="four">
+        <h3>Task #4</h3>
+        <div id="area5">
+            <table id="table1" style="width:50%; height: 400px;"></table>
+        </div>
+        <button id="action3">Action</button>
+        <br>
+        <br>
+    </div>
+    <div id="five">
+        <h3>Task #5</h3>
+        <div id="area6"></div>
+        <br>
+        <div id="area7"></div>
+        <br>
+        <textarea name="user-input" id="text"></textarea><br>
+        <button id="action4">Action</button>
+    </div>
+<script src="./index.js" defer></script>
+</body>
+</html>
