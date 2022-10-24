@@ -7,10 +7,14 @@
     <title>Week 4</title>
 </head>
 <style>
-    .box{
+    body{
+        padding: 20px;
+    }
+    .box, .box2, .box3{
         border: solid 0.5px black;
-        width: 100%;
-        height: 400px;
+        width: 20%;
+        margin-left: 20px;
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -18,9 +22,34 @@
     .box span:nth-child(1)::after, .box span:nth-child(2)::after{
         content: ":";
     }
+    .box2{
+        padding-left: 15px;
+    }
+    .box3{
+        margin-bottom: 15px;
+    }
 </style>
 <body>
-
+    <div id="one">
+        <h3>⦁	შექმენით ელექტორნული საათი:</h3>
+        <div class="box" id="box"></div>
+    </div>
+    <div id="two">
+        <h3>⦁	გამოიტანეთ მიმდინარე წელი, თვე, რიცხვი, კვირის დღე, საათი, წუთი, წამი, მილიწამი.</h3>
+        <div class="box2" id="date"></div>
+    </div>
+    <div id="three">
+        <h3>
+            ⦁	გამოიტანეთ რამდენი დღე, საათი, წუთი, წამია გასული 2016 წლის 1 იანვირდან დღემდე.
+            <br>
+            ⦁	გამოიტანეთ რამდენი დღეა გასული წლის დასაწყისიდან მომხმარებლის მიერ შეტანილ თარიღამდე.
+            <br>
+            ⦁	გამოიტანეთ რამდენი კვირაა გასული წლის დასაწყისიდან მომხმარებლის მიერ შეტანილ თარიღამდე.
+        </h3>
+        <div id="box3" class="box3">mm /dd /yy </div>
+        <input id="user-date" type="date" style="margin-left: 20px;">
+        <button id="action" >Action</button>
+    </div>
 <script src="./script.js" defer></script>
 </body>
 </html>
