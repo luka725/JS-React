@@ -1,0 +1,165 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+}
+.infowrapper{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.information{
+  padding: 0 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buttonswrapper{
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.buttonswrapper > button{
+  width: 100%;
+  height: 50px;
+}
+.articles{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.articles > div{
+  text-align: left;
+}
+.btn{
+  height: 40px;
+  margin: 50px 0 0 0;
+  width: 150px;
+}
+.mainexpwrapper{
+  width: 70vw;
+  margin: 5rem auto;
+}
+.title{
+  font: 3rem sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: darkblue;
+}
+.titlewrapper{
+  margin: 30px 0 30px 0;
+}
+.informationtitle{
+  margin: 0;
+  padding: 0;
+}
+.date{
+  margin: 0;
+  padding: 0;
+}
+.personname{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  padding: 10px;
+}
+.anotherH3{
+  text-align: left;
+  font-weight: 400;
+  padding: 5px 0 0 0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.myH4{
+  margin: 0;
+  font-weight: 300;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: gray;
+}
+.person{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 10px;
+  margin: 30px 0 0 0;
+  height: auto;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #90e0da;
+}
+.Myh3{
+  margin: 0 0 30px 0;
+  padding: 30px 0 0 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Mybutton{
+  margin: 30px 0 0 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}

@@ -80,5 +80,16 @@ const doCompare = (usertime, realtime, element) => {
     let d2 = new Date(realtime);
     let res = Math.abs(d2.getTime() - d1.getTime());
     let output = res/(1000 * 3600 * 24);
-    element.innerText = `Diference in days is ${output} day`;
+    element.innerText = '';
+    let secondpara = document.createElement('p');
+    secondpara.innerText = `Diference in days is ${output} day`;
+    element.appendChild(secondpara);
+    let week = output / 7;
+    let day = output % 7;
+    week = Math.floor(week);
+    let br = document.createElement('br');
+    let para = document.createElement('p');
+    para.innerText = `before that date ${week} Week and ${day} days are passed`
+    element.appendChild(br);
+    element.appendChild(para);
 };

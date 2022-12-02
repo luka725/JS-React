@@ -1,0 +1,152 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.unorderedlist{
+  list-style: none;
+}
+.title{
+  color: #ffffff; 
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 51px;
+  margin-top: 15px;
+  font-weight: 300;
+  line-height: 58px;
+  margin: 0 0 58px;
+}
+section{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  border-radius: 10px 10px 0px 0px;
+  background-color: #1C2329;
+  padding-bottom: 30px;
+}
+.lst{
+  color: white;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 31px;
+  margin-top: 15px;
+  font-weight: 300;
+  line-height: 38px;
+  margin: 0 0 38px;
+}
+.todos{
+  min-height: 200px;
+  background-color:#FE931F;
+  padding: 20px 0 20px 0;
+  border: solid;
+  border-width: 0 2px 0 2px;
+  border-color: #1C2329;
+}
+.donedtodos{
+  min-height: 200px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #1C2329;
+  padding-bottom: 30px;
+  color: white;
+  padding-top: 20px;
+}
+.input{
+  font-family: inherit;
+  width: 30%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+/* CSS */
+.addbtn {
+  align-self: center;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.addbtn:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.addbtn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+.addbtn{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #FE931F;
+  margin-left: 20px;
+  border: hidden;
+  height: 100%;
+}
+.doned{
+  text-decoration: line-through;
+  list-style: none;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
