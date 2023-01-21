@@ -1,7 +1,7 @@
 import Currentperson from "./Currentpersoninformation";
 import { useState } from "react";
 const Person = () => {
-    const [bigdata, setData] = useState([
+    const [bigdata, _] = useState([
         {
             name: "Patrick",
             mail: "Bikini Bottom",

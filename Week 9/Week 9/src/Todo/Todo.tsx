@@ -7,8 +7,9 @@ interface Itodo {
 }
 const Todo = () =>{
     const [todos, setTodos] = useState<Itodo[]>([]);
+    const [limit, setLimit] = useState(3)
     async function fetchTodos(){
-        const todos  = await fetch("https://dummyjson.com/todos?limit=3&skip=10");
+        const todos  = await fetch(`https://dummyjson.com/todos?limit=${limit}&skip=10`);
         const response = await todos.json();
         //console.log(response.todos);
         setTodos(response.todos);
@@ -18,7 +19,8 @@ const Todo = () =>{
     }
     useEffect(() => {
       fetchTodos();
-    }, [])
+    }, [limit])
+    
     return(
         <>
             {todos.map((obj, index) => (
@@ -27,6 +29,7 @@ const Todo = () =>{
                 <button onClick={() => deleteTodo(obj.id)}>delete</button>
                 </div>
             ))}
+            <button onClick={() => setLimit(limit + 1)}>add todo</button>
         </>
     )
 }
