@@ -4,10 +4,6 @@
   padding: 2rem;
   text-align: center;
 }
-.qatami{
-  color: blue;
-}
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -49,13 +45,14 @@
   flex-wrap: wrap;
 }
 .itemsloop > div{
-  height: 400px ;
-  width: calc(100% * (1/4) - 10px - 1px);
+  height: auto ;
+  width: auto;
   border: solid 2px gainsboro;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: column;
   margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
